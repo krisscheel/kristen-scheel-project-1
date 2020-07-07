@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--font awesome-->
   <script src="https://kit.fontawesome.com/35078fa9ad.js" crossorigin="anonymous"></script>
+
+  <!--google fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Emblema+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
+
   <title>Electric Select</title>
 </head>
 <body>
@@ -15,6 +20,7 @@
 <!-- HEADER SECTION -->
   <header class="clearfix">
     <div class="headRight clearfix">
+      <p class="hamburger"><i class="fas fa-bars"></i></p>
       <nav class="topNav">
         <ul class="clearfix">
           <li><a href="contact.html">contact</a></li>
@@ -51,7 +57,7 @@
         <ul class="appliances clearfix">
           <li><img src="assets/gallery-photo-1.jpg" alt="Panasonic sterling silver microwave"></li>
           <li><img src="assets/gallery-photo-2.jpg" alt="Magimix silver blender"></li>
-          <li><img src="assets/gallery-photo-3.jpg" alt="silver toaster"></li>
+          <li><img class="photo3" src="assets/gallery-photo-3.jpg" alt="silver toaster"></li>
         </ul>
       </div>
 
@@ -112,33 +118,32 @@
 
   <footer>
     <div class="contactInfo">
-      <div class="wrapper clearfix">
+      <div class="clearfix">
         <div class="contactForm">
           <h4>stay updated</h4>
           <p>Subscribe to our newsletter to stay updated</p>
           <form action="sendEmail.php" method="POST" class="myForm" autocomplete="off" name="myForm">
-            <input type="text" name="email" class="email" placeholder="Your email address" required="true">
-            <button class="submitButton">Subscribe</button>
+            <input type="text" name="email" class="email" placeholder="email address" required="true"><button class="submitButton">Subscribe</button>
           </form>
         </div>
-        <div class="contactAddress">
-          <h4>Contact</h4>
-          <p>info@email.com 123-456-7890</p>
-          <p>123 some road, Toronto, ON</p>
-          <p>A5A 5A5, Canada</p>
-        </div>
-        <div>
-          <nav class="footerNav">
-            <ul>
-              <li><a href="">home</a></li>
-              <li><a href="">about</a></li>
-              <li><a href="">blog</a></li>
-              <li><a href="">contact</a></li>
-            </ul>
-          </nav>
+         <div class="contactAddress">
+            <h4>Contact</h4>
+            <p>info@email.com 123-456-7890</p>
+            <p>123 some road, Toronto, ON</p>
+            <p>A5A 5A5, Canada</p>
+          </div>
+          <div>
+            <nav class="footerNav">
+              <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
       <div class="copyright">
        <p>Created by Kristen Scheel for <a href="https://junocollege.com/">Juno College</a> (Copyright © 2019 HackerYou)</p>
       </div>
