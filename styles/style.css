@@ -326,7 +326,7 @@ input[type=text] {
   color: #042259;
   margin: 0;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 80px;
   height: 40px;
   vertical-align: middle;
   font-size: 2em;
@@ -342,10 +342,20 @@ input[type=text] {
 
 /* Media Queries for Responsiveness */
 
-@media (max width: 1290px) {
+@media (max-width: 1290px) {
   .sec2RightContent {
     width: 100%;
   }
+
+  .contactForm {
+    display: inline-block;
+    vertical-align: center;
+  }
+
+  .submitButton {
+    margin-top: 10px;
+  }
+  
 }
 
 @media (max-width: 1225px) {
@@ -360,6 +370,7 @@ input[type=text] {
   font-size: 1.5em;
   float: right;
   padding-right: 20px;
+  font-size: 2em;
   }
 
   .socialIcons {
@@ -370,9 +381,46 @@ input[type=text] {
     font-size: 6rem;
   }
 
+  .sec3TopLeft {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .sec3TopRight {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .sec3BottomRight {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+  .sec3BottomLeft {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+  .photo2 {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
 }
 
 @media (max-width: 960px) {
+
+  .section2 h2 {
+    padding-left: 8rem;
+    }
+    
+    .section2 button {
+      margin-left: 80px;
+    }
 
   .coffeeImgContainer {
     width: 90%;
@@ -381,7 +429,8 @@ input[type=text] {
   .sec2RightContent {
     padding-left: 0;
     margin-left: 0;
-    display: block
+    display: block;
+    width: 100%;
     float: none;
   }
  
@@ -389,22 +438,51 @@ input[type=text] {
     background-color: rgba(252, 221, 226, 0.5)
   }
 
+  .section4 {
+    height: 60vh;
+  }
+
   .shop {
-    width: 100%;
-    float: none;
     display: block;
+    float: none;
+    padding-left: 160px;
+    padding-top: 80px;
+  }
+
+  .shop h3 {
+    padding-left: 20px;
+  }
+
+  .jobs h3 {
+    padding-left: 20px;
+  }
+
+  .events h3 {
+    padding-left: 10px;
   }
 
   .jobs {
-    width: 100%;
-    float: none;
     display: block;
+    float: none;
+    padding-left: 160px;
+  }
+
+  .fa-car {
+    padding-left: 40px;
+  }
+
+  .fa-briefcase {
+    padding-left: 40px;
+  }
+
+  .fa-calendar-check {
+    padding-left: 40px;
   }
 
   .events {
-    width: 100%:
-    float: none;
     display: block;
+    float: none;
+    padding-left: 160px;
   }
 
   .photo3 {
@@ -422,15 +500,24 @@ input[type=text] {
   margin-left: 40px;
 }
 
+.copyright p {
+  padding-left: 60px;
 }
 
-@media (max-width: 650) {
+.contactAddress {
+  padding-left: 150px;
+}
+
+}
+
+@media (max-width: 650px) {
+
   h1 {
-    font-size: 1.5rem;
+    font-size: 4.5rem;
   }
 
-  h2 {
-    font-size: 0.5rem;
+  .headLeft p {
+    font-size: 1rem;
   }
 
   .headLeft {
@@ -441,18 +528,38 @@ input[type=text] {
   .headerImgContainer {
     display: block;
   }
+
+  .contactForm {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .contactAddress {
+    width: 40%;
+   float: left;
+   padding-left: 20px;
+  }
+
+  .footerNav {
+    width: 40%;
+    float: right;
+  }
+
 }
 
 @media (max-width: 320px) {
   .headLeft {
     display: block;
+    width: 100%;
     float: none;
   }
 
   .headerImgContainer {
-    width: 100%;
     float: none;
     display: block;
+    width: 100%;
   }
+
 }
 
