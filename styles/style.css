@@ -377,7 +377,7 @@ input[type=text] {
     display: none;
   }
 
-   h1 {
+  h1 {
     font-size: 6rem;
   }
 
@@ -418,12 +418,22 @@ input[type=text] {
     padding-left: 8rem;
     }
     
-    .section2 button {
-      margin-left: 80px;
+  .section2 button {
+    margin-left: 120px;
+  }
+  
+  .sec2Bottom h2 {
+    padding-top: 10px;
+  }
+
+  .sec2RightContent h2 {
+    padding-top: 20px;
+    padding-left: 0px;
     }
 
   .coffeeImgContainer {
     width: 90%;
+    margin-bottom: 20px;
   }
 
   .sec2RightContent {
